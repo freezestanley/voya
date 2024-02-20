@@ -1,0 +1,75 @@
+.site-header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  top: 40px;
+  font-size: 20px;
+  padding: 0 80px;
+  min-width: 1000px;
+  z-index: 1000;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .menu {
+    text-align: center;
+
+    a {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+
+    a.active {
+      &::after {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 3px;
+        left: 50%;
+        margin-left: -9px;
+        bottom: 0;
+        background-color: #ceff97;
+        border-radius: 7px;
+      }
+    }
+
+    a + a {
+      margin-left: 80px;
+    }
+  }
+
+  .logo {
+    width: 98px;
+    height: 46px;
+  }
+
+  .icon-fly,
+  .icon-x {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+
+  .btn-launch {
+    margin-left: 25px;
+    padding: 0 15px;
+  }
+
+  .connected {
+    width: 203px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 5px;
+    background: rgba(4, 0, 62, 1);
+    color: rgba(162, 220, 96, 1);
+    margin-left: 25px;
+    padding: 0 15px;
+  }
+}
